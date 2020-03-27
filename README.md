@@ -40,7 +40,7 @@ POST localhost:8080/student - Passing a json representation of a student without
 I also set this up in AWS - so if you want to bypass the set up you can call it directly:
 
 ```
-www.maslakowski.com/student 
+www.maslakowski.com:8080/student 
 ```
 
 I also pre-loaded some data on that server.
