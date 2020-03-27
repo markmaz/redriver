@@ -5,6 +5,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Objects;
 
+/**
+ * Basic entity/model
+ */
 @Document(collection = "students")
 public class Student {
     @JsonProperty
@@ -14,8 +17,11 @@ public class Student {
     private String lastName;
 
     @JsonProperty
-
     private String id;
+
+    //The names of the columns in the database - I like constants. No guessing.
+    public static final String LAST_NAME = "lastName";
+    public static final String FIRST_NAME = "firstName";
 
     public Student(){}
 

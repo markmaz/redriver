@@ -6,6 +6,9 @@ import org.springframework.http.HttpStatus;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+/**
+ * A simple object to hold some of the error data and return it as json.
+ */
 public class CustomError {
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy hh:mm:ss")

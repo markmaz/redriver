@@ -14,9 +14,6 @@ public interface StudentRepository extends MongoRepository<Student, String> {
     <S extends Student> Page<S> findAll(Example<S> example, Pageable pageable);
 
 
-    @Override
-    Page<Student> findAll(Pageable pageable);
-
     Optional<Student> findById(String id);
 
     @Override

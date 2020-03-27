@@ -51,6 +51,15 @@ public class RedRiverStudentServiceImpl implements StudentService {
         }
     }
 
+    /**
+     * Added the sorting to this as well along with pagination and optional parameters using the Example and ExampleMapper
+     *
+     * @param student
+     * @param page
+     * @param size
+     * @param sort
+     * @return
+     */
     @Override
     public List<Student> getStudents(Student student, int page, int size, String sort) {
         ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("firstName", exact()).withMatcher("lastName", exact());
